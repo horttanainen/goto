@@ -73,7 +73,7 @@ subgoto() {
 
     scrollgotos() {
         printf "Press (space) to goto, (n) next result, (p) previous.\n"
-        printf "Press (s) to do a scrollsearchresults from this directory.\n\n"
+        printf "Press (s) to do a search from this directory.\n\n"
         line=1
         maxlines=$(echo "$result" | wc -l)
         while true; do
