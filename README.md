@@ -88,3 +88,5 @@ $ cd folder/that/goto
 $ g -r simply/could/not/find
 ```
 folder/that/goto/simply/could/not/find is now stored at the lines file
+
+This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
