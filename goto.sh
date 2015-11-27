@@ -22,7 +22,11 @@ goto() {
         case $opt in
             r)
                 goto=0
-                file="$workdir/$OPTARG"
+                if [ $(echo "${#workdir}") = 1 ]; then
+                    file="${workdir}$OPTARG"
+                else
+                    file="$workdir/$OPTARG"
+                fi
                 if [ -e $file ]; then
                     echo "$file" | cat - "$lines" > $tmpfile && mv $tmpfile "$lines"
                     break

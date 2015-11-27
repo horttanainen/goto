@@ -10,7 +10,12 @@ subgoto() {
             src="$*"
             base=${src##*/}
             dir=${src%"$base"}
-            cd $dir
+            dirtest=$(echo "$dir" | tr -d '[:space:]') #fix for issue #2
+            if [ -z $dirtest ]; then
+                cd $(dirname $src)
+            else
+                cd $dir
+            fi
         fi
     }
 
@@ -122,5 +127,27 @@ subgoto() {
         fi
     }
 
-    lookfromgotos
+    checkforroot() {
+        if [ $(echo "${#keyword}") = 1 ]; then
+            if [ $keyword = "/" ]; then
+                gotofolder $keyword
+            else
+                removeslash
+            fi
+        else
+            removeslash
+        fi
+    }
+
+    removeslash() {
+        lastchar=${keyword#"${keyword%?}"}
+        if [ $lastchar = "/" ]; then
+            keyword=${keyword%?}
+            lookfromgotos 
+        else
+            lookfromgotos
+        fi
+    }
+
+    checkforroot
 }
