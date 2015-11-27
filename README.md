@@ -91,4 +91,11 @@ $ g -r simply/could/not/find
 ```
 folder/that/goto/simply/could/not/find is now stored at the lines file
 
+##Known issues
+1. gotoing to root doesn't seem to work
+2. gotoing to folders directly above root does't work ( I will fix this very soon)
+3. goto doesnt seem to find folders with '/' at the end
+
+## License
+
 This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
