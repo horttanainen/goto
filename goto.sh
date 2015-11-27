@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 #
+# This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
 # this script should not be run directly,
 # instead you need to source it from your .bashrc (or similar to your shell choice),
 # by adding this line:

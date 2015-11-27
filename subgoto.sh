@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+#This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
 
 subgoto() {
     keyword="$*"

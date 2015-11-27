@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+#This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
 dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 modify="$dir/goto.sh"
 tmpfile="$dir/tmpfile"

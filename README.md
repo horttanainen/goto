@@ -39,6 +39,8 @@ That's it!
 
 ## Usage
 
+###### Type Ctrl-c to stop anytime!
+
 If I would like to my installation folder of goto (which is in ~/projects/goto/goto.sh) I would simply type:
 ```
 $ g goto
@@ -88,3 +90,12 @@ $ cd folder/that/goto
 $ g -r simply/could/not/find
 ```
 folder/that/goto/simply/could/not/find is now stored at the lines file
+
+##Known issues
+1. gotoing to root doesn't seem to work
+2. gotoing to files directly above root does't work ( I will fix this very soon, folders work!)
+3. goto doesnt seem to find folders with '/' at the end
+
+## License
+
+This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
