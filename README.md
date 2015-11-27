@@ -92,9 +92,6 @@ $ g -r simply/could/not/find
 folder/that/goto/simply/could/not/find is now stored at the lines file
 
 ##Known issues
-~~1. gotoing to root doesn't seem to work~~
-~~2. gotoing to files directly above root does't work ( I will fix this very soon, folders work!)~~
-~~3. goto doesnt seem to find folders with '/' at the end~~
 
 ## License
 
