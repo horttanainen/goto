@@ -15,9 +15,8 @@ export tmpfile="$gotopath/tmpfile"
 
 script="$gotopath/subgoto.sh"
 
-goto=1
-
 goto() {
+    goto=1
     export workdir="$(pwd)"
     while getopts ":cr:a:" opt; do
         case $opt in
