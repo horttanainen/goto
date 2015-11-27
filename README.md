@@ -39,6 +39,8 @@ That's it!
 
 ## Usage
 
+###### Type Ctrl-c to stop anytime!
+
 If I would like to my installation folder of goto (which is in ~/projects/goto/goto.sh) I would simply type:
 ```
 $ g goto
