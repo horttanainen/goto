@@ -93,6 +93,12 @@ folder/that/goto/simply/could/not/find is now stored at the lines file
 
 ##Known issues
 
+Empty goto results in a warning, but does not break program. Will fix this someday soon.
+
+##Improvement ideas
+
+I would like to change inputs requiring space to enter because pressing space feels somewhat strange. 
+
 ## License
 
 This content is released under the (https://github.com/horttanainen/goto/blob/master/LICENSE) MIT License. 
